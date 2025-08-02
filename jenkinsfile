@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('checkout') {
             steps {
-                git 'https://github.com/ReyazShaik/tf-jenkins-project.git'
+                git branch: 'main', url: 'https://github.com/adaleShri/terraform-project-3tier.git'
             }
         }
         stage('init') {
